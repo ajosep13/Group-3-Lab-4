@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>
+        Table creation 
+    </title>
+    <!--linked our style sheet style.css to table.html page-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--Connected javascript page to table.html page-->
+    <script src="script.js"></script>
+</head>
+<!--On loading the body for this page the function refresh_table() in script.js is invoked-->
+<body onload="refresh_table()">
+    <h1 align="center">Group Members</h1>
+    <table>
+        <!--thead tag is used to add the heder portion of the table. Table here is divided into three section thead, tbody and tfoot-->
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Job</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        
+        <!--tbody will be loaded to the html page with the help of javascript in script.js file-->
+        <tbody id='my_table'></tbody>
+
+        <!--tfoot is used here to add extra row to the table dynamically-->
+        <tfoot>
+            <tr onkeyup="onEnterUp(event)"> <!-- On triggering this with Enter key the function will be invoked-->
+                <td><input type="file" id="myImage" name="imagefile"></td>  <!--To browse the file-->
+                <td><input type="text" id="fst" name="fst"></td>            <!--To get the input for the field first name-->
+                <td><input type="text" id="lst"	name="lst"></td>            <!--To get the input for the field last name-->
+                <td><input type="text" id="jb" name="jb"></td>              <!--To get the input for the field job-->
+                <td><input type="text" id="s" name="s"></td>                <!--To get the input for the field salary-->
+            </tr>
+        </tfoot>
+
+        <caption>Dynamic Table</caption>                                    <!--To set table caption-->
+    </table>
+    <hr>
+    <!--Link to index.html-->
+    <a href="index.html"> Back To Home</a>
+</body>
+</html>
