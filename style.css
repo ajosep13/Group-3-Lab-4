@@ -1,0 +1,63 @@
+body {background-color: floralwhite;}
+
+a {color: Blue;}
+a:hover {color:red;}
+
+h1 {
+  color: floralwhite;
+  font-family: Baskerville Old Face;
+  font-size: 300%;
+  background-color:MediumSeaGreen;
+
+}
+
+p, ul  {
+  color: black;
+  font-family: Baskerville Old Face;
+  font-size: 160%;
+}
+
+h2 {color:green;}
+
+U {color:blue;}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+thead {
+	color: floralwhite;
+  	font-family: Baskerville Old Face;
+  	font-size: 300%;
+	background-color:MediumSeaGreen;
+}
+
+th {width: 300px;}
+
+
+td {
+	font-family: Baskerville Old Face;
+  	font-size: 200%;
+	width: 50px;
+	height: 140px;
+}
+
+tr:hover {background-color: powderblue;}
+
+caption {
+	caption-side: bottom;
+	font-family: Baskerville Old Face;
+  	font-size: 200%;
+}
+
+input[type=text] {
+  	width: 100%;
+  	border: 0px;
+  	outline: none;
+  	text-align: center;
+  	background-color: inherit;
+  	font-size: inherit;
+  	font-family: inherit;
+}
